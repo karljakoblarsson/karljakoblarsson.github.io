@@ -1,0 +1,1 @@
+alert("Jag är bäst!");
