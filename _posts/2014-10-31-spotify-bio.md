@@ -9,6 +9,6 @@ Karl Jakob Larsson
 ===================
 Enginerring student at Chalmers.
 
-[github.com/karljakoblarsson](github.com/karljakoblarsson)
-[soundcloud.com/karllarz](soundcloud.com/karllarz)
+[github.com/karljakoblarsson](http://github.com/karljakoblarsson)
+[soundcloud.com/karllarz](http://soundcloud.com/karllarz)
 
