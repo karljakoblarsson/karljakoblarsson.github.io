@@ -54,16 +54,16 @@ of the same process.
 
 Sometimes I entertain myself by writing javascript stuff:
 
-*     [Small game I did.](https://rawgit.com/karljakoblarsson/Drive-Away/master/index.html)
-      A small game i wanted to test. Written in raw javascript with canvas.
-      Lots of things are missing. Most notably sound and nice visuals.
+* [Small game I did.](https://rawgit.com/karljakoblarsson/Drive-Away/master/index.html)
+  A small game i wanted to test. Written in raw javascript with canvas.
+  Lots of things are missing. Most notably sound and nice visuals.
 
-*     [Fractalz](https://rawgit.com/karljakoblarsson/Fractalz/master/index.html)
-      Trying to render the [Fractal Flame](https://www.google.com/search?q=fractal+flame)
-      algorithm i js. It works but is really slow.
-      A few parts of the algorithm is missing. But it can do cool visuals still.
-      The interface is code. There should probably be some kind of editor for the flames
-      in the future.
+* [Fractalz](https://rawgit.com/karljakoblarsson/Fractalz/master/index.html)
+  Trying to render the [Fractal Flame](https://www.google.com/search?q=fractal+flame)
+  algorithm i js. It works but is really slow.
+  A few parts of the algorithm is missing. But it can do cool visuals still.
+  The interface is code. There should probably be some kind of editor for the flames
+  in the future.
 
 
 Find more stuff I've done:
