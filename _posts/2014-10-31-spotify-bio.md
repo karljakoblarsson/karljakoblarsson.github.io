@@ -7,7 +7,7 @@ categories: bio
 
 Who am I?
 =========
-![Me playing snaredrum during the Chalmers Cortége]({{ site.url}}/images/karljakoblarsson-cortege14.jpg)
+![Me at lundakarnevalen 2014]({{ site.url }}/images/karljakoblarsson-lunda14.jpg)
 
 This (obviously) not complete.
 I only heard about this event yesterday and didn't have time for more than to
@@ -38,3 +38,6 @@ More stuff I've done:
 [github.com/karljakoblarsson](http://github.com/karljakoblarsson)
 [soundcloud.com/karllarz](http://soundcloud.com/karllarz)
 
+
+Me playing snaredrum during the Chalmers Cortége.
+![Me playing snaredrum during the Chalmers Cortége]({{ site.url}}/images/karljakoblarsson-cortege14.jpg)
