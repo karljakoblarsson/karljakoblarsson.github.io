@@ -19,7 +19,7 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #E5E5E5;
+  background-color: #ECECEC;
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
@@ -34,9 +34,9 @@ h1 {
 }
 p { margin: 1em 0; }
 
-a         { color: #00a; }
+a         { color: #F7208B; }
 a:hover   { color: #000; }
-a:visited { color: #F7208B; }
+a:visited { color: #00a; }
 
 /*****************************************************************************/
 /*
@@ -79,11 +79,10 @@ a:visited { color: #F7208B; }
 
 .title {
   display: inline-block;
-  margin-bottom: 2em;
 }
 
 .title a {
-  color: #a00;
+  color: #F7208B;
 }
 
 .title a:hover {

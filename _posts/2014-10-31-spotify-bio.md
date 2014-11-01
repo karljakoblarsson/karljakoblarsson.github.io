@@ -9,10 +9,18 @@ Who am I?
 =========
 ![Me at lundakarnevalen 2014]({{ site.url }}/images/karljakoblarsson-lunda14.jpg)
 
+The picture is of me at Lundakarnevalen 2014.
+Playing drums with my dear orchestra AllianceOrchestret.
+
 This (obviously) not complete.
 I only heard about this event yesterday and didn't have time for more than to
 fill out the signup form.
-I guessed (hoped) that you wouldnt get to it before I could fix it.
+I guessed (hoped) that you wouldnt get here before I could fix it.
+
+
+I am Karl Jakob Larsson.
+Right now I live in Gothenburg to study engineering at Chalmers.
+
 
 
 
@@ -39,5 +47,4 @@ More stuff I've done:
 [soundcloud.com/karllarz](http://soundcloud.com/karllarz)
 
 
-Me playing snaredrum during the Chalmers Cortége.
 ![Me playing snaredrum during the Chalmers Cortége]({{ site.url}}/images/karljakoblarsson-cortege14.jpg)
