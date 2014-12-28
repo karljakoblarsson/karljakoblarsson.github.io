@@ -10,17 +10,23 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Custom CSS -->
+        <link rel="stylesheet" href="/fonts/futural.css">
         <link rel="stylesheet" href="/css/main.css">
 
+        <meta name="descriptiton" content="Karl Jakob Larsson">
+        <meta name="keywords" content="karljakoblarsson,personalwebsite,homepage">
+
     </head>
-    <body>
+    <body class="body">
 
-        <div class="site">
-            {% include nav.html %}
-            {% include header.html %}
+      {% include nav.html %}
+      {% include header.html %}
 
-              {{ content }}
+        <main>
+          {{ content }}
+        </main>
 
-        </div>
+      {% include footer.html %}
+
     </body>
 </html>
