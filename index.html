@@ -3,32 +3,45 @@ layout: default
 title: Karl Jakob Larsson
 ---
 
-<section class="projects">
-  <h2>Projects</h2>
-  {% for post in site.posts %}
-    {% if post.category == "projects" %}
+{% include header.html %}
+<main>
+  <section class="projects">
+    <h2>Projects</h2>
+    {% for post in site.categories.projects limit:3 %}
       <article class="project">
         <div>
           <h3>
-            {{ post.title }}
+            <a href="{{ post.url }}">
+              {{ post.title }}
+            </a>
           </h3>
             {{ post.excerpt }}
+            <div class="links">
+              {% if post.link %}
+                <a href="{{ post.link }}"><span>LIVE LINK</span></a>
+              {% endif %}
+              {% if post.source %}
+                <a href="{{ post.source }}"><span>SOURCE</span></a>
+              {% endif %}
+            </div>
         </div>
-        <img src="images/{{ post.image}}" alt="{{ post.title }}">
+        <a class="project-image" alt="{{ post.title }}" href="{{ post.url }}">
+          <img src="images/{{ post.image}}" alt="{{ post.title }}">
+        </a>
       </article>
-    {% endif %}
-  {% endfor %}
-</section>
-<section class="blog">
-  <h2>Blog</h2>
-  <ul class="blog-listing">
-    {% for post in site.posts %}
-      <li>
-        <span>{{ post.date | date_to_string }}</span>
-          &raquo;
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
     {% endfor %}
-  </ul>
-</section>
-
+  </section>
+  <section class="blog">
+    <h2>Blog</h2>
+    <ul class="blog-listing">
+      {% for post in site.posts %}
+        <li>
+          <span>{{ post.date | date_to_string }}</span>
+            &raquo;
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  
+</main>

@@ -13,6 +13,7 @@ $accent: #e55353
 $fg: #333
 $font-stack: Helvetica, Arial, sans-serif
 $width: 55em
+$proj-height: 200px
 
 @font-face
   font-family: 'futural'
@@ -68,12 +69,13 @@ h1, h2, h3, h4, h5, h6
   font-size: 100%
 
 h1
-  font-size: 150%
   width: 100%
   padding-top: 0.5em
 
   font: 6em "futural2", Arial
   color: black
+  @include mobile
+    font-size: 3em
 
   background-image: linear-gradient(0deg, $bg, rgba( $bg,0.9),rgba( $bg, 0.7), rgba( $bg, 0.5), rgba(255, 255, 255, 0))
   text-shadow: 0px 0px 10px rgba(110, 110, 110, 0.5)
@@ -84,8 +86,9 @@ header
   height: 50vw
 
   display: flex
-  justify-content: center
   align-items: flex-end
+  flex-direction: column
+  justify-content: space-between
 
 p
   margin: 1em 0
@@ -128,10 +131,11 @@ nav
     color: #FFF
     font-weight: bold
     text-decoration: none
-
-    padding: 1em 2em 1em 2em
+    font-size: 1.2em
+    padding: 0.6em 1.2em 0.5em 1.2em
     @include mobile
-      padding: 1em 0.5em 1em 0.5em
+      font-size: 1em
+      padding: 0.6em 0.5em 0.5em 0.5em
 
     &:hover
       background-color: lighten( $accent, 10%)
@@ -139,12 +143,20 @@ nav
     &:visited
       color: #FFF
 
+#nav-shadow
+  width: 100%
+  height: 9px
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.37), transparent)
+
 
 // main
 main
   max-width: $width
   margin: 0 auto
   text-align: justify
+
+  box-shadow: 0px 27px 23px rgba(86, 86, 86, 0.62)
+  background-color: #f3f3f3
 
   flex: 1
 
@@ -165,17 +177,19 @@ footer
 
 // Projects
 
+.projects
+  > h2
+    display: none
+
 .project
-  height: 200px
+  height: $proj-height
 
   @include mobile
     img
       width: 100%
     > div
-      height: 200px
+      height: $proj-height
     height: auto
-
-  border-left: 1px solid $fg
 
   display: flex
   flex-direction: row
@@ -195,17 +209,49 @@ footer
   > div
     flex: 1
 
+    overflow: hidden
+
     padding: 1em 1em 1em 1em
 
-  img
+  .project-image > img
     display: block
-    max-height: 100%
+    height: $proj-height
+    @include mobile
+      height: inherit
 
   h3
     font-size: 200%
     font-style: oblique
     font-weight: 100
 
+  a
+    color: inherit
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+.links
+  display: flex
+  flex-direction: row
+
+.links > a
+  flex: 1
+  border: 1px solid lighten( $accent, 20%)
+  border-radius: 3px
+  padding: 0.3em 0.3em 0.3em 1.2em
+  font-weight: 400
+  margin: 0.5em 0.5em 0.5em 0em
+
+  &:hover
+    background-color: lighten( $accent, 10%)
+    text-decoration: none
+
+// Blog
+
+.blog
+  margin-top: 1em
+  margin-left: 3em
+  padding-bottom: 3em
 
 .posts
   list-style-type: none
