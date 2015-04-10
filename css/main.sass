@@ -10,7 +10,7 @@
 $bg: #f3f3f3
 //$accent: #F7208B
 $accent: #e55353
-$fg: #333
+$fg: #666
 $font-stack: Helvetica, Arial, sans-serif
 $width: 55em
 $proj-height: 200px
@@ -56,6 +56,7 @@ section, article, aside, footer, header, nav, hgroup
 html, body
   height: 100%
 
+// Everything
 body
   background-color: $bg
   color: $fg
@@ -64,15 +65,33 @@ body
   text-align: center
   font-weight: 100
 
+a
+  color: black
+
+  &:visited
+    color: #AAA
 
 h1, h2, h3, h4, h5, h6
   font-size: 100%
 
+p
+  margin: 1em 0
+
+// overall
+img
+  max-width: 100%
+
+.site
+  display: flex
+  min-height: 100vh
+  flex-direction: column
+
+// Header
 h1
   width: 100%
   padding-top: 0.5em
 
-  font: 6em "futural2", Arial
+  font: 6em "futural", Arial
   color: black
   @include mobile
     font-size: 3em
@@ -83,30 +102,12 @@ h1
 header
   background: url("../images/karljakoblarsson-cortege14-corp.jpg")
   background-size: cover
-  height: 50vw
+  height: 45vw
 
   display: flex
   align-items: flex-end
   flex-direction: column
   justify-content: space-between
-
-p
-  margin: 1em 0
-
-a
-  color: #F7208B
-a:hover
-  color: #000
-a:visited
-  color: #00a
-
-img
-  max-width: 100%
-
-.site
-  display: flex
-  min-height: 100vh
-  flex-direction: column
 
 // nav
 nav
@@ -246,13 +247,54 @@ footer
     background-color: lighten( $accent, 10%)
     text-decoration: none
 
-// Blog
+.more
+  float: right
+  margin: 0.5em 1em 0 0
+  font-size: 1.2em
 
+.projects-space
+  height: $proj-height / 4
+
+// Blog
 .blog
   margin-top: 1em
   margin-left: 3em
-  padding-bottom: 3em
+  padding-bottom: 2em
 
+  h2
+    font-size: 2.5em
+    font-style: oblique
+    font-weight: 300
+    color: $fg
+    margin-left: 1em
+    margin-bottom: 0.4em
+    margin-top: 0.6em
+
+  li
+    margin-bottom: 0.4em
+
+  .posts-title
+    font-size: 2em
+    font-weight: 300
+    text-decoration: none
+    color: $fg
+
+    &:hover
+      text-decoration: underline
+
+  .date
+    float: right
+    margin-right: 1.2em
+    color: mix($fg, white, 35%)
+    font-size: 1.5em
+
+.blog-listing
+  list-style-type: none
+
+
+
+// Old
+/*****************************************************************************/
 .posts
   list-style-type: none
   margin-bottom: 2em
@@ -290,9 +332,6 @@ footer
 
 .meta
   color: #aaa
-
-
-// Posts
 
 .post img
   width: 100%
