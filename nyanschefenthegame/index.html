@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nyanschef the Game</title>
+    <style type="text/css">
+    @font-face {
+      font-family: 'ETR';
+      src:  url('English-Towne-Medium.ttf.woff') format('woff'),
+      url('English-Towne-Medium.ttf.svg#English-Towne-Medium') format('svg'),
+      url('English-Towne-Medium.ttf.eot'),
+      url('English-Towne-Medium.eot?#iefix') format('embedded-opentype'); 
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      background-image: url(orch.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0px -50px;
+      margin: 0px;
+      overflow: hidden;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .splash {
+      background-color: #881aaa;
+
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.5s linear;
+    }
+
+    @media (orientation: landscape) {
+      .splash {
+        height: vmax;
+      }
+    }
+    @media (orientation: portrait) {
+      .splash {
+        transform: rotate(90deg) translate(0,22%);
+        width: 100vh;
+      }
+    }
+
+    h1 {
+      font-family: ETR, Georgia;
+      color: rgb(255,192,0);
+      font-size: 40pt;
+      text-shadow: 0px 1px 2px rgba(0,0,0,0.9);
+      font-weight: 400;
+      margin-left: 0.5em;
+    }
+
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #baton {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      transition: opacity 0.25s linear;
+      transform: translate(-70%, -70%);
+    }
+
+  </style>
+
+  <meta name="viewport" content="width=device-width,  user-scalable=no">
+
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+  <div id="baton"><img src="baton.png" alt=""></div>
+  <div class="splash">
+    <div class="logo">
+      <img src="alliancen_logo.png" />
+      <h1>
+        Nyanschefen
+        <br />
+        the Game
+      </h1>
+    </div>
+  </div>
+  <div id="sounds">
+    <audio id="norrlands" src="norrlands.mp3"></audio>
+  </div>
+</body>
+</html>
