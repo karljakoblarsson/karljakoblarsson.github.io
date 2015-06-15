@@ -6,7 +6,7 @@ categories: bio
 ---
 
 Who am I?
-=========
+---------
 ![Me at lundakarnevalen 2014]({{ site.url }}/images/karljakoblarsson-lunda14.jpg)
 
 The picture is of me at Lundakarnevalen 2014.

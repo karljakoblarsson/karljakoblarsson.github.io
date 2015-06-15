@@ -7,13 +7,17 @@
 /*****************************************************************************/
 
 // Variables
-$bg: #f3f3f3
+$bg: #fcfcfc
 //$accent: #F7208B
+// Bra nedan
+//$accent: #e55353
 $accent: #e55353
-$fg: #666
+$fg: #555
 $font-stack: Helvetica, Arial, sans-serif
 $width: 55em
 $proj-height: 200px
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic)
 
 @font-face
   font-family: 'futural'
@@ -156,8 +160,10 @@ main
   margin: 0 auto
   text-align: justify
 
-  box-shadow: 0px 27px 23px rgba(86, 86, 86, 0.62)
-  background-color: #f3f3f3
+  &:not(#post)
+    box-shadow: 0px 27px 23px rgba(86, 86, 86, 0.62)
+
+  background-color: $bg
 
   flex: 1
 
@@ -167,6 +173,7 @@ footer
   color: $bg
   text-align: left
   font-size: 80%
+  font-weight: 400
 
 .footer
   color: #FFF
@@ -176,8 +183,23 @@ footer
   margin: 0 auto
 
 
-// Projects
+// Article
+article
+  @include tablet
+    padding: 0em 2em 0em 2em
 
+#post
+  article
+    p
+      font-family: 'Droid Serif', serif
+      font-size: 20px
+
+    h1, h2
+      font-family: $font-stack
+
+// Figure
+
+// Projects
 .projects
   > h2
     display: none
@@ -257,18 +279,18 @@ footer
 
 // Blog
 .blog
-  margin-top: 1em
+  margin-top: 3em
   margin-left: 3em
   padding-bottom: 2em
 
   h2
-    font-size: 2.5em
+    font-size: 3.0em
     font-style: oblique
-    font-weight: 300
+    font-weight: 400
     color: $fg
-    margin-left: 1em
+    margin-left: 0em
     margin-bottom: 0.4em
-    margin-top: 0.6em
+    margin-top: 0.0em
 
   li
     margin-bottom: 0.4em
