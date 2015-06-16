@@ -35,7 +35,7 @@ title: Karl Jakob Larsson
   <section class="blog">
     <h2>Blog</h2>
     <ul class="blog-listing">
-      {% for post in site.posts %}
+      {% for post in site.posts limit:5 %}
         <li>
           <a class="posts-title" href="{{ post.url }}">{{ post.title }}</a>
           <span class="date">{{ post.date | date_to_string }}</span>
