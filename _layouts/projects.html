@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<main id="post">
+  <!--<h2>{{ page.title }}</h2>-->
+
+  <article >
+    <figure>
+      <img src="/images/{{ page.image }}" alt="{{ page.title }}">
+      <figcaption class="image-caption">
+        {{ page.title }}
+      </figcaption>
+    </figure>
+    {{ content }}
+  </article>
+</main>
+

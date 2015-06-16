@@ -1,4 +1,7 @@
 name: Karl Jakob Larsson
 title: Karl Jakob Larsson
 markdown: redcarpet
-pygments: true
+higlighter: pygments
+encoding: utf-8
+gems:
+  - octopress-autoprefixer

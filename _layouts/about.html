@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Karl Jakob Larsson</title>
+        <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
         <!-- syntax highlighting CSS -->
@@ -21,8 +21,14 @@
 
       {% include nav.html %}
 
-          {{ content }}
+      {% include header.html %}
 
+
+      <main class="about" id="post">
+        <article class="bodytext">
+            {{ content }}
+        </article>
+      </main>
       {% include footer.html %}
 
     </body>
