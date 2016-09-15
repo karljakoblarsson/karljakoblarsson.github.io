@@ -1,0 +1,393 @@
+/**************************************************************************** */
+/* Karl Jakob Larsson
+ * Personal website 2015 */
+/* MIT License */
+/**************************************************************************** */
+
+/* Variables */
+html {
+  --accent-color: #e44d4d;
+  --accent-light-color: hsla(0,74%,85%,1);
+  --bg-color: #fcfcfc;
+  --fg-color: #555;
+  --fg-light-color: #888;
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  font-family: "Fira Sans", "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body * + * {
+  margin-top: 1.5rem;
+}
+section, article, aside, footer, header, nav, hgroup {
+  display: block;
+}
+
+body {
+  text-align: center;
+}
+
+a {
+  color: var(--accent-color);
+}
+  a:visited {
+    color: #f2b6b6;
+}
+
+p a {
+  font-weight: 800;
+}
+
+footer a {
+  font-weight: 800;
+  color: var(--bg-color);
+}
+  footer a:visited {
+    color: #f2b6b6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+p {
+  margin: 1em 0;
+}
+
+h1 {
+  width: 100%;
+  font-size: 5rem;
+  font-weight: 200;
+}
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: 3em;
+    }
+}
+
+header::before {
+  display: block;
+  content: "";
+  background: url("../images/karljakoblarsson-cortege14-corp.jpg");
+  background-size: cover;
+  height: 40vw;
+  background-position: center 32%;
+}
+
+nav {
+  background-color: var(--accent-color);
+  margin: 0;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+  @media only screen and (max-width: 480px) {
+    nav {
+      justify-content: space-around; }
+}
+  nav ul {
+    list-style-type: none;
+}
+    nav ul li {
+      display: inline;
+      padding: 0em 1em;
+}
+  nav > a {
+    display: inline-block;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: .5rem 1.5rem;
+    margin-top: 0;
+}
+    @media only screen and (max-width: 480px) {
+      nav > a {
+        font-size: 1em;
+        padding: 0.6em 0.5em 0.5em 0.5em; }
+}
+    nav > a:hover {
+      background-color: #eb7979;
+      color: #FFF;
+}
+    nav > a:visited {
+      color: #FFF;
+}
+
+#nav-shadow {
+  width: 100%;
+  height: 9px;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.37), transparent);
+}
+
+main {
+  max-width: 55rem;
+  margin: 0 auto;
+  text-align: justify;
+  background-color: var(--bg-color);
+}
+  @media only screen and (min-width: 1000px) {
+    main {
+      max-width: 55rem;
+      }
+}
+  @media only screen and (max-width: 480px) {
+    main {
+      max-width: 100vw; }
+}
+
+footer {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.footer {
+  color: #FFF;
+  margin-top: 2em;
+  overflow: hidden;
+  max-width: 55em;
+  margin: 0 auto;
+}
+
+#post h2 {
+  font-size: 3em;
+  font-style: oblique;
+  font-weight: 400;
+  color: var(--fg-color);
+  margin: 1em auto 0.5em auto;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  #post .meta {
+    margin-left: 1em; }
+}
+@media only screen and (max-width: 999px) {
+  #post .meta {
+    margin-left: 1em; }
+}
+#post article {
+  margin-bottom: 6em;
+}
+  #post article p {
+    margin-top: 2em;
+}
+    @media only screen and (min-width: 1000px) {
+      #post article p {
+        font-size: 20px; }
+}
+    @media only screen and (max-width: 999px) {
+      #post article p {
+        font-size: 16px; }
+}
+    @media only screen and (max-width: 480px) {
+      #post article p {
+        font-size: 13px; }
+}
+  #post article h1, #post article h2 {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+  @media only screen and (max-width: 999px) {
+    #post article {
+      padding: 0em 2em 0em 2em; }
+}
+  @media only screen and (max-width: 480px) {
+    #post article {
+      padding: 0em 1em 0em 1em; }
+}
+  #post article hr {
+    border: 0;
+    background-color: #c2c2c2;
+    height: 1px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+figure {
+  float: center;
+}
+
+.projects > h2 {
+  display: none;
+}
+
+.project {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+}
+  @media only screen and (max-width: 480px) {
+    .project {
+      height: auto;
+}
+      .project img {
+        width: 100%;
+}
+      .project > div {
+        height: 200px; }
+}
+  @media only screen and (max-width: 480px) {
+    .project {
+      flex-direction: column-reverse; }
+}
+  .project:nth-child(even) {
+    flex-direction: row-reverse;
+}
+    @media only screen and (max-width: 480px) {
+      .project:nth-child(even) {
+        flex-direction: column-reverse; }
+}
+    .project:nth-child(even) > div {
+      background-color: var(--accent-color);
+      color: var(--bg-color);
+}
+  .project > div {
+    flex: 1;
+    overflow: hidden;
+    padding: 1em;
+}
+  .project .project-image > img {
+    display: block;
+    max-height: 200px;
+    margin-top: 0;
+}
+    @media only screen and (max-width: 480px) {
+      .project .project-image > img {
+        height: inherit; }
+}
+  .project h3 {
+    font-size: 200%;
+    /* font-style: oblique; */
+    font-weight: 100;
+}
+  .project a {
+    margin-top: 0;
+    color: inherit;
+    text-decoration: none;
+}
+    .project a:hover {
+      text-decoration: underline;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
+.links > a {
+  flex: 1;
+  border: 1px solid #f1a6a6;
+  border-radius: 3px;
+  padding: 0.3em 0.3em 0.3em 1.2em;
+  font-weight: 400;
+  margin: 0.5em 0.5em 0.5em 0em;
+}
+
+.links > a:hover {
+    background-color: var(--accent-light-color);
+    text-decoration: none;
+}
+
+.more {
+  float: right;
+  font-size: 2em;
+}
+
+.projects-space {
+  height: 50px;
+}
+
+.blog {
+  margin-top: 3em;
+  margin-left: 3em;
+  padding-bottom: 2em;
+}
+.blog h2 {
+    font-size: 3em;
+}
+
+.blog li {
+    margin-bottom: 0.4em;
+    display: flex;
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .blog li {
+    flex-direction: column; }
+
+}
+  .blog .posts-title {
+    font-size: 2em;
+    text-align: left;
+    font-weight: 300;
+    flex: 1;
+}
+    .blog .posts-title:hover {
+      text-decoration: underline;
+}
+  .blog .date {
+    color: var(--fg-light-color);
+}
+    @media only screen and (max-width: 480px) {
+      .blog .date {
+        font-size: 1em;
+        margin-bottom: 0.7em; }
+}
+
+.blog-listing {
+  list-style-type: none;
+}
+
+.posts span {
+  color: #aaa;
+  font-family: "Fira Mono", Monaco, monospace;
+  font-size: 80%;
+}
+
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
+
+/* Inspector adds */
+
+header > h1 {
+  background-color: var(--bg-color);
+}
+
+.middlename {
+  color: #a2a2a2;
+}
+
+header {
+  margin: 0;
+}
+
+.contact {
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 55ch;
+  display: inline-block;
+  padding-left: 1em;
+}
+
+footer .middlename {
+  color: var(--accent-light-color);
+}
+
