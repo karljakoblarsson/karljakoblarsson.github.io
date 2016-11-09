@@ -1,6 +1,5 @@
 name: Karl Jakob Larsson
 title: Karl Jakob Larsson
-markdown: redcarpet
 higlighter: pygments
 encoding: utf-8
 gems:
