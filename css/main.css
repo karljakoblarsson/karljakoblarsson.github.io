@@ -4,7 +4,7 @@
 /* MIT License */
 /**************************************************************************** */
 
-/* Variables */
+/* ---------- Variables --------- */
 html {
   --accent-color: #e44d4d;
   --accent-light-color: hsla(0,74%,85%,1);
@@ -23,6 +23,7 @@ html {
   padding: 0;
 }
 
+/* ---------- Layout and spacing --------- */
 body * + * {
   margin-top: 1.5rem;
 }
@@ -35,27 +36,10 @@ body {
   text-align: center;
 }
 
-a {
-  color: var(--accent-color);
-}
+/* ---------- Lists --------- */
 
-a:visited {
-  color: #f2b6b6;
-}
 
-p a {
-  font-weight: 800;
-}
-
-footer a {
-  font-weight: 800;
-  color: var(--bg-color);
-}
-
-footer a:visited {
-  color: #f2b6b6;
-}
-
+/* ---------- Headings --------- */
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
 }
@@ -66,18 +50,15 @@ h1 {
   font-weight: 200;
 }
 
-@media only screen and (max-width: 550px) {
-  h1 {
-    font-size: 3em;
-  }
-}
+/* ---------- Header --------- */
 
 header::before {
   display: block;
   content: "";
   background: url("../images/karljakoblarsson-evil_1000px.jpeg");
   background-size: contain;
-  height: 40vw;
+  height: 47vw;
+  max-height: 675px;
   max-width: 32vw;
   background-position: center 32%;
   background-repeat: no-repeat;
@@ -88,15 +69,10 @@ header::before {
   z-index: -1;
 }
 
+/* ---------- Navigation --------- */
 nav {
   background-color: var(--accent-color);
   margin: 0;
-}
-
-@media only screen and (max-width: 550px) {
-  nav {
-    justify-content: space-around;
-  }
 }
 
 nav ul {
@@ -118,13 +94,6 @@ nav > a {
   margin-top: 0;
 }
 
-@media only screen and (max-width: 550px) {
-  nav > a {
-    font-size: 1em;
-    padding: 0.6em 0.5em 0.5em 0.5em;
-  }
-}
-
 nav > a:hover {
   background-color: #eb7979;
   color: #FFF;
@@ -139,18 +108,6 @@ main {
   text-align: justify;
   background-color: var(--bg-color);
   max-width: 65ch;
-}
-
-@media only screen and (min-width: 551px) {
-  main {
-    padding: 0 1em;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  main {
-    max-width: 100vw;
-  }
 }
 
 footer {
@@ -168,19 +125,33 @@ footer {
   margin: 0 auto;
 }
 
-.post h2 {
-  /*font-size: 3em;*/
-  /*font-style: oblique;*/
-  /*font-weight: 400;*/
-  /*color: var(--fg-color);*/
-  /*margin: 1em auto 0.5em auto;*/
-  /*text-align: center;*/
+
+
+/* ---------- Links --------- */
+a {
+  color: var(--accent-color);
 }
 
-@media only screen and (max-width: 999px) {
-  .post .meta {
-    margin-left: 1em;
-  }
+a:visited {
+  color: #f2b6b6;
+}
+
+p a {
+  font-weight: 800;
+}
+
+footer a {
+  font-weight: 800;
+  color: var(--bg-color);
+}
+
+footer a:visited {
+  color: #f2b6b6;
+}
+
+
+.post h2 {
+  font-style: oblique;
 }
 
 .post article {
@@ -193,12 +164,6 @@ footer {
   margin-left: 0;
 }
 
-
-@media only screen and (max-width: 999px) {
-  .post  {
-    padding: 0em 1em 0em 1em;
-  }
-}
 
 .post article hr {
   border: 0;
@@ -224,32 +189,6 @@ footer {
   flex-direction: row-reverse;
 }
 
-@media only screen and (max-width: 550px) {
-  .project {
-    height: auto;
-  }
-
-  .project img {
-    width: 100%;
-  }
-
-  .project > div {
-    height: 200px;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .project {
-    flex-direction: column-reverse;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .project:nth-child(even) {
-    flex-direction: column-reverse;
-  }
-}
-
 .project:nth-child(even) > div {
   background-color: var(--accent-color);
   color: var(--bg-color);
@@ -268,16 +207,6 @@ footer {
   margin-top: 0;
 }
 
-@media only screen and (max-width: 550px) {
-  .project .project-image > img {
-    height: inherit;
-    max-height: 100%;
-  }
-
-  .project > div {
-    padding: 0 1em 0 1em;
-  }
-}
 
 .project h3 {
   font-size: 200%;
@@ -314,54 +243,6 @@ footer {
   text-decoration: none;
 }
 
-.more {
-  float: right;
-  font-size: 2em;
-}
-
-/*.blog {*/
-  /*margin-top: 3em;*/
-  /*margin-left: 3em;*/
-  /*padding-bottom: 2em;*/
-/*}*/
-
-/*.blog h2 {*/
-    /*font-size: 3em;*/
-/*}*/
-
-/*.blog li {*/
-    /*margin-bottom: 0.4em;*/
-    /*display: -webkit-box;*/
-    /*display: -ms-flexbox;*/
-    /*display: flex;*/
-    /*margin-top: 0;*/
-/*}*/
-
-/*.blog .posts-title {*/
-  /*font-size: 2em;*/
-  /*text-align: left;*/
-  /*font-weight: 300;*/
-  /*flex: 1;*/
-/*}*/
-
-/*.blog .posts-title:hover {*/
-   /*text-decoration: underline;*/
-/*}*/
-/*.blog .date {*/
-    /*color: var(--fg-light-color);*/
-/*}*/
-
-/*@media only screen and (max-width: 550px) {*/
-  /*.blog .date {*/
-    /*font-size: 1em;*/
-    /*margin-bottom: 0.7em;*/
-  /*}*/
-/*}*/
-
-/*.blog-listing {*/
-  /*list-style-type: none;*/
-/*}*/
-
 .posts span {
   color: #aaa;
   font-family: "Fira Mono", Monaco, monospace;
@@ -373,10 +254,12 @@ footer {
 header > h1 {
   display: block;
   width: 35vw;
+  max-width: 492px;
   order: 1;
   font-size: 6vw;
   background-color: rgba(0,0,0,0.0);
   line-height: 100%;
+  margin-top: -1em;
 }
 
 .lastname {
@@ -417,3 +300,76 @@ img {
   margin-top: 0;
 }
 
+
+
+/* ---------- Media queries --------- */
+@media only screen and (min-width: 1400px) {
+  header > h1 {
+    font-size: 84px;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .post .meta {
+    margin-left: 1em;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .post  {
+    padding: 0em 1em 0em 1em;
+  }
+}
+
+@media only screen and (min-width: 551px) {
+  main {
+    padding: 0 1em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .contact {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 3em;
+  }
+  nav {
+    justify-content: space-around;
+  }
+  nav > a {
+    font-size: 1em;
+    padding: 0.6em 0.5em 0.5em 0.5em;
+  }
+  main {
+    max-width: 100vw;
+  }
+  .project {
+    height: auto;
+  }
+
+  .project img {
+    width: 100%;
+  }
+
+  .project > div {
+    height: 200px;
+  }
+  .project {
+    flex-direction: column-reverse;
+  }
+  .project:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .project .project-image > img {
+    height: inherit;
+    max-height: 100%;
+  }
+
+  .project > div {
+    padding: 0 1em 0 1em;
+  }
+}
