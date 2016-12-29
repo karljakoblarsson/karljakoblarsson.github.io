@@ -73,8 +73,7 @@ Skills
 - JavaScript, Haskell, Python, Java, Excel VBA
 - Linux/Unix: Zsh, vim, ssh, git etc.
 - HTML/CSS
-- Basic Electronics
-- Good skills in Illustrator/Lightroom/Photoshop/Premier Pro
+- Illustrator/Lightroom/Photoshop/Premier Pro
 - Drivers license (B)
 
 
