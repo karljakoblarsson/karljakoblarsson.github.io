@@ -4,7 +4,7 @@
 /* MIT License */
 /**************************************************************************** */
 
-/* ---------- Variables --------- */
+/* ---------- Variables, fonts and colors --------- */
 html {
   --accent-color: #e44d4d;
   --accent-light-color: hsla(0,74%,85%,1);
@@ -16,27 +16,36 @@ html {
   font-family: "Fira Sans", "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-
 /* Global Reset */
 * {
   margin: 0;
   padding: 0;
 }
 
+
 /* ---------- Layout and spacing --------- */
 body * + * {
   margin-top: 1.5rem;
-}
-
-section, article, aside, footer, header, nav, hgroup {
-  display: block;
 }
 
 body {
   text-align: center;
 }
 
-/* ---------- Lists --------- */
+main {
+  margin: 0 auto;
+  text-align: justify;
+  max-width: 65ch;
+}
+
+img {
+  max-width: 65ch;
+}
+
+.project * + * {
+  margin-top: 0;
+}
+
 
 
 /* ---------- Headings --------- */
@@ -48,25 +57,6 @@ h1 {
   width: 100%;
   font-size: 5rem;
   font-weight: 200;
-}
-
-/* ---------- Header --------- */
-
-header::before {
-  display: block;
-  content: "";
-  background: url("../images/karljakoblarsson-evil_1000px.jpeg");
-  background-size: contain;
-  height: 47vw;
-  max-height: 675px;
-  max-width: 32vw;
-  background-position: center 32%;
-  background-repeat: no-repeat;
-  flex-shrink: 0;
-  flex-grow: 1;
-  order: 2;
-  margin-left: -8vw;
-  z-index: -1;
 }
 
 /* ---------- Navigation --------- */
@@ -103,12 +93,57 @@ nav > a:visited {
   color: #FFF;
 }
 
-main {
-  margin: 0 auto;
-  text-align: justify;
-  background-color: var(--bg-color);
-  max-width: 65ch;
+
+/* ---------- Header --------- */
+
+header::before {
+  display: block;
+  content: "";
+  background: url("../images/karljakoblarsson-evil_1000px.jpeg");
+  background-size: contain;
+  height: 47vw;
+  max-height: 675px;
+  max-width: 32vw;
+  background-position: center 32%;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  flex-grow: 1;
+  order: 2;
+  margin-left: -8vw;
+  z-index: -1;
 }
+
+header > h1 {
+  display: block;
+  width: 35vw;
+  max-width: 492px;
+  order: 1;
+  font-size: 6vw;
+  background-color: rgba(0,0,0,0.0);
+  line-height: 100%;
+  margin-top: -1em;
+}
+
+header {
+  margin: 0;
+  margin-bottom: -24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.lastname {
+  display: block;
+  margin-top: 0;
+}
+
+.middlename {
+  color: #a2a2a2;
+}
+
+
+/* ---------- Footer --------- */
 
 footer {
   background-color: var(--accent-color);
@@ -125,6 +160,25 @@ footer {
   margin: 0 auto;
 }
 
+footer a {
+  font-weight: 800;
+  color: var(--bg-color);
+}
+
+footer a:visited {
+  color: #f2b6b6;
+}
+
+footer .middlename {
+  color: var(--accent-light-color);
+}
+
+.contact {
+  text-align: justify;
+  max-width: 55ch;
+  display: inline-block;
+  padding-left: 1em;
+}
 
 
 /* ---------- Links --------- */
@@ -140,40 +194,14 @@ p a {
   font-weight: 800;
 }
 
-footer a {
-  font-weight: 800;
-  color: var(--bg-color);
+
+
+/* ---------- Projects listing --------- */
+.posts span {
+  color: #aaa;
+  font-family: "Fira Mono", Monaco, monospace;
+  font-size: 80%;
 }
-
-footer a:visited {
-  color: #f2b6b6;
-}
-
-
-.post h2 {
-  font-style: oblique;
-}
-
-.post article {
-  margin-bottom: 6em;
-}
-
-.post article h1, .post article h2 {
-  font-size: 1.5em;
-  font-weight: 800;
-  margin-left: 0;
-}
-
-
-.post article hr {
-  border: 0;
-  background-color: var(--fg-light-color);
-  height: 1px;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 
 .projects > h2 {
   display: none;
@@ -206,7 +234,6 @@ footer a:visited {
   max-height: 210px;
   margin-top: 0;
 }
-
 
 .project h3 {
   font-size: 200%;
@@ -243,93 +270,51 @@ footer a:visited {
   text-decoration: none;
 }
 
-.posts span {
-  color: #aaa;
-  font-family: "Fira Mono", Monaco, monospace;
-  font-size: 80%;
+
+
+/* ---------- Post page --------- */
+.post h2 {
+  font-style: oblique;
 }
 
-/* Inspector adds */
-
-header > h1 {
-  display: block;
-  width: 35vw;
-  max-width: 492px;
-  order: 1;
-  font-size: 6vw;
-  background-color: rgba(0,0,0,0.0);
-  line-height: 100%;
-  margin-top: -1em;
+.post article {
+  margin-bottom: 6em;
 }
 
-.lastname {
-  display: block;
+.post article h1, .post article h2 {
+  font-size: 1.5em;
+  font-weight: 800;
+  margin-left: 0;
+}
+
+.post article hr {
+  border: 0;
+  background-color: var(--fg-light-color);
+  height: 1px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ---------- Lists --------- */
+li {
   margin-top: 0;
 }
 
-.middlename {
-  color: #a2a2a2;
-}
 
-header {
-  margin: 0;
-  margin-bottom: -24px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+/* ---------- Fixes --------- */
+.about {
+  margin-top: 2em;
 }
-
-.contact {
-  text-align: justify;
-  margin: 0 auto;
-  max-width: 55ch;
-  display: inline-block;
-  padding-left: 1em;
-}
-
-footer .middlename {
-  color: var(--accent-light-color);
-}
-
-img {
-  max-width: 65ch;
-}
-
-.project * + * {
-  margin-top: 0;
-}
-
 
 
 /* ---------- Media queries --------- */
-@media only screen and (min-width: 1400px) {
-  header > h1 {
-    font-size: 84px;
-  }
-}
-
-@media only screen and (max-width: 999px) {
-  .post .meta {
-    margin-left: 1em;
-  }
-}
-
-@media only screen and (max-width: 999px) {
-  .post  {
-    padding: 0em 1em 0em 1em;
-  }
-}
-
 @media only screen and (min-width: 551px) {
+  /*This is mostly a bugfix when the width is close to 550px When the screen is
+   * more narrow than the content but not narrow enough for a mobile layout.*/
   main {
     padding: 0 1em;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .contact {
-    display: block;
   }
 }
 
@@ -337,16 +322,20 @@ img {
   h1 {
     font-size: 3em;
   }
+
   nav {
     justify-content: space-around;
   }
+
   nav > a {
     font-size: 1em;
     padding: 0.6em 0.5em 0.5em 0.5em;
   }
+
   main {
     max-width: 100vw;
   }
+
   .project {
     height: auto;
   }
@@ -358,12 +347,15 @@ img {
   .project > div {
     height: 200px;
   }
+
   .project {
     flex-direction: column-reverse;
   }
+
   .project:nth-child(even) {
     flex-direction: column-reverse;
   }
+
   .project .project-image > img {
     height: inherit;
     max-height: 100%;
@@ -372,4 +364,35 @@ img {
   .project > div {
     padding: 0 1em 0 1em;
   }
+
+  ul, ol {
+    list-style-position: inside;
+  }
+
+  li > p {
+    display: inline;
+  }
 }
+
+@media only screen and (max-width: 700px) {
+  .contact {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .post .meta {
+    margin-left: 1em;
+  }
+
+  .post  {
+    padding: 0em 1em 0em 1em;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  header > h1 {
+    font-size: 84px;
+  }
+}
+
