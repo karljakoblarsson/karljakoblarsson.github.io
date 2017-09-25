@@ -1,6 +1,6 @@
 ---
 layout: about
-title: CV - Karl Jakob Larsson
+title: CV - Jakob Larsson
 ---
 
 
@@ -14,11 +14,12 @@ I developed a tool to install and manage small radio devices in non-cellular
 networks. The main application will be to setup IoT systems. It was built as
 a responsive web app using React and Go on the backend.
 
-### Bemannica AB
-Summer 2014
+### Chalmers teknologkonsulter, CTK
+2016-2017
 
-Staffing work in grocery stores around
-Gothenburg, mostly during the summer.
+Worked part time as an IT contractor. Worked on, among other things an iOS app
+and a tool to show and analyse elections results.
+
 
 
 ### Configuration Manager, Ericsson AB
@@ -29,12 +30,6 @@ It started as a four month internship but I stayed for 9.
 My tasks included administrating and hosting a Control Change Board, working
 with RoHS2 certification of the cellular base stations and general
 information management.
-
-
-### ICA Nära Grundsund
-
-I worked at the local grocery store during the summer
-holidays.
 
 
 Education
@@ -50,6 +45,13 @@ Education
 
 Other Experiences
 -----------------
+
+### Chalmersspexet Bob
+2017
+
+I am the musical director of the music theater Magnus Ladulås. During the year
+we played over 20 shows for several thousand peaople all over Sweden and
+Finland. I manage an orchestra of 9 musicians and a cast of 7 actors/singers.
 
 ### CHARM - Chalmers student union work fair
 2015-2016
