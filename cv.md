@@ -7,7 +7,15 @@ title: CV - Karl Jakob Larsson
 Work Experience
 ---------------
 
+### Web developer, Ericsson AB
+Summer 2017
+
+I developed a tool to install and manage small radio devices in non-cellular
+networks. The main application will be to setup IoT systems. It was built as
+a responsive web app using React and Go on the backend.
+
 ### Bemannica AB
+Summer 2014
 
 Staffing work in grocery stores around
 Gothenburg, mostly during the summer.
@@ -15,7 +23,7 @@ Gothenburg, mostly during the summer.
 
 ### Configuration Manager, Ericsson AB
 
-At Radio System Design in Kista, Stockholm.
+At Radio System Design in Kista, Stockholm. 2012-2013
 
 It started as a four month internship but I stayed for 9.
 My tasks included administrating and hosting a Control Change Board, working
@@ -34,6 +42,7 @@ Education
 
 ### Chalmers University of Technology
 
+- 2017- Algorithms, logic and language master.
 - 2014- Computer Science Engineering
 
 - 2013-2014 Industrial Design Engineering
