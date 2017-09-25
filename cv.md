@@ -81,9 +81,9 @@ Skills
 ------
 
 
-- JavaScript, Haskell, Python, Java, Excel VBA
-- Linux/Unix: Zsh, vim, ssh, git etc.
-- HTML/CSS
+- JavaScript, Haskell, Python, Go, Java, Excel VBA
+- Linux/Unix: Zsh, vim, ssh, git, ack, sed etc.
+- HTML/CSS/React/Bootstrap
 - Illustrator/Lightroom/Photoshop/Premier Pro
 - Drivers license (B)
 
@@ -91,5 +91,5 @@ Skills
 ### Languages
 
 - English – Fluent (Full professional proficiency)
-- Swedish – Mother tongue
+- Swedish – First language
 
