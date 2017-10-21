@@ -3,23 +3,33 @@ layout: about
 title: CV - Jakob Larsson
 ---
 
+Engineering student who wants to build products users love.
+Great JavaScript and CSS skills, including React. Prefers functional
+programming.
+Strong communication skills developed by many different nonprofit commitments.
+Especially interested in the intersection between sound, graphics and
+technology.
+
+Relaxes by brewing coffee and playing music.
+Gathers energy by cooking for others or dancing to techno.
+
 
 Work Experience
 ---------------
 
 ### Web developer, Ericsson AB
-Summer 2017
+Lindholmen, Gothenburg - Summer 2017
 
-I developed a tool to install and manage small radio devices in non-cellular
-networks. The main application will be to setup IoT systems. It was built as
-a responsive web app using React and Go on the backend.
+I developed a tool to install and manage low power radio devices in non-cellular
+networks. The main application will be to roll-out IoT systems. It was built as
+a responsive web app using React with Go on the back-end.
 
-### Chalmers teknologkonsulter, CTK
+
+### IT Consultant, Chalmers teknologkonsulter, CTK
 2016-2017
 
-Worked part time as an IT contractor. Worked on, among other things an iOS app
+Worked part time as an IT consultant. Built, among other things, an iOS app
 and a tool to show and analyse elections results.
-
 
 
 ### Configuration Manager, Ericsson AB
@@ -37,7 +47,7 @@ Education
 
 ### Chalmers University of Technology
 
-- 2017- Algorithms, logic and language master.
+- 2017- Algorithms, language and logic master.
 - 2014- Computer Science Engineering
 
 - 2013-2014 Industrial Design Engineering
@@ -46,14 +56,20 @@ Education
 Other Experiences
 -----------------
 
-### Chalmersspexet Bob
+### Producer, Chalmersspexet Bob
 2017
 
 I am the musical director of the music theater Magnus Ladulås. During the year
-we played over 20 shows for several thousand peaople all over Sweden and
+we played over 20 shows for several thousand people all over Sweden and
 Finland. I manage an orchestra of 9 musicians and a cast of 7 actors/singers.
 
-### CHARM - Chalmers student union work fair
+### Student Union Council
+2016-2018
+
+I was the secretary for the Chalmers Student Union Council 2016-2017 and
+a member of the council the year after.
+
+### Event Responsible, CHARM - Chalmers student union work fair
 2015-2016
 
 I was part of the organizing committee for the Chalmers Student Union Work
@@ -70,20 +86,20 @@ It is a exhibition and competition for the best young scientists in Sweden.
 Each year we have about 300 participants from all over the country.
 I was the head of marketing and IT.
 
-### The Alliance Orchestra of Gothenburg
+### Conductor, The Alliance Orchestra of Gothenburg
 2014-2016
 
 Musical director for the Alliance Orchestra of Gothenburg.
 Which means I arrange concerts, tours, dinners, parties and other events for
 between 15-120 people.
 
+
 Skills
 ------
 
-
-- JavaScript, Haskell, Python, Go, Java, Excel VBA
+- JavaScript, Go, Haskell, Agda, Python, Java, Excel VBA, PHP, Erlang
+- HTML, CSS, React, Redux, Bootstrap
 - Linux/Unix: Zsh, vim, ssh, git, ack, sed etc.
-- HTML/CSS/React/Bootstrap
 - Illustrator/Lightroom/Photoshop/Premier Pro
 - Drivers license (B)
 
