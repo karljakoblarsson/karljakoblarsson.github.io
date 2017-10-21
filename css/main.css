@@ -53,6 +53,10 @@ h1 {
   font-weight: 200;
 }
 
+h3 > p {
+  margin-top: initial;
+}
+
 /* ---------- Navigation --------- */
 nav {
   background-color: var(--accent-color);
