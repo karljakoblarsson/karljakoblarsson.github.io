@@ -1,6 +1,7 @@
 ---
 layout: about
 title: Karl Jakob Larsson
+menuitem: navabout
 ---
 
 <!-- I'm currently living in Gothenburg while studying at Chalmers University of -->

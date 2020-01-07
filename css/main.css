@@ -67,6 +67,18 @@ nav {
   margin: 0;
 }
 
+body.navhome a.navhome {
+  background-color: var(--accent-light-color);
+}
+
+body.navcv a.navcv {
+  background-color: var(--accent-light-color);
+}
+
+body.navabout a.navabout {
+  background-color: var(--accent-light-color);
+}
+
 nav ul {
   list-style-type: none;
 }

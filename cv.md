@@ -1,6 +1,7 @@
 ---
 layout: about
 title: CV - Jakob Larsson
+menuitem: navcv
 ---
 
 Computer Science Engineering student who wants to build products users love.
