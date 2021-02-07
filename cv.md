@@ -4,21 +4,27 @@ title: CV - Jakob Larsson
 menuitem: navcv
 ---
 
-Computer Science Engineering student who wants to build products users love.
-Great JavaScript and CSS skills, including React. Prefers functional
+Software Engineer who wants to build products users love.
+Great JavaScript skills, including React. Prefers functional
 programming.  Strong communication skills developed in several nonprofit
 commitments.
 
-Outside of programming I spend time on synthesisers and coffee.
+Outside of work I build and plays analog synthesizers.
 
-Currently writing my master thesis with the draft title: Symbolic Functional Finite
-Exterior Calculus. We aim to improve the performance of a partial differential
-equation solver by implementing the front-end as a symbolic domain specific
-language written in Haskell.
 
 
 Relevant Work Experience
 ---------------
+
+### Fullstack Software Engineer, LumenRadio
+Feb 2020 - Current
+
+Develops the app and backend for the AirGlow wireless outdoor lighting control
+system. The app is cross-platform and communicates with the embedded
+controller using Bluetooth LE. The system is connected via REST to a backend
+written in python. I'm sole responsible for the app and backend, and develops
+the full system together with the team.
+
 
 ### Developer, Klimator AB
 Gothenburg - Summer 2018
@@ -43,24 +49,17 @@ Worked part time as an IT consultant. Built, among other things, an iOS app
 and a tool to show and analyse elections results.
 
 
-### Configuration Manager, Ericsson AB
-
-At Radio System Design in Kista, Stockholm. 2012-2013
-
-It started as a four month internship but I stayed for 9.  Administred and
-hosted a Control Change Board, worked with RoHS2 certification of cellular base
-stations and configuration management.
-
-
 Education
 ---------
 
 ### Chalmers University of Technology
 
-- 2017- Algorithms, language and logic master.
-- 2014- Computer Science Engineering
+- 2017 - 2020 Algorithms, language and logic master.
+    For my masters's thesis I wrote a partial transpiler from the dependently
+    typed programming language Idris into Agda.
+- 2014 - 2020 Computer Science Engineering
 
-- 2013-2014 Industrial Design Engineering
+- 2013 - 2014 Industrial Design Engineering
 
 
 Selection of Other Experiences
@@ -79,35 +78,14 @@ I was part of the organizing committee for the Chalmers Student Union Work
 Fair. The fair has about 150 exhibitors and several thousand visitors.
 I worked with corporate relations and events.
 
-### Producer, Chalmersspexet Bob
-2017
-
-I was the musical director of the music theater Magnus Ladulås. During the year
-we played over 20 shows for several thousand people.  I managed an orchestra of
-9 musicians and a cast of 7 actors/singers.
-
-<!-- ### Swedish Federation of Youth Scientists -->
-<!-- 2013-2015 -->
-
-<!-- I worked with the Swedish Youth Science -->
-<!-- Exhibition. (Utställningen Unga Forskare) -->
-<!-- It is a exhibition and competition for the best young scientists in Sweden. -->
-<!-- Each year we have about 300 participants from all over the country. -->
-<!-- I was the head of marketing and IT. -->
-
-<!-- ### Conductor, The Alliance Orchestra of Gothenburg -->
-<!-- 2014-2016 -->
-
-<!-- Musical director for the Alliance Orchestra of Gothenburg. -->
-<!-- Which means I arrange concerts, tours, dinners, parties and other events for -->
-<!-- between 15-120 people. -->
-
 
 Skills
 ------
 
-- JavaScript, SQL, Haskell, Go, Agda, Python, Java, PHP, Erlang
+- JavaScript, Python, C#, SQL, Haskell, Java, PHP, Erlang
 - HTML, CSS, React, Redux
+- iOS and Androind app developemnt. Swift, Java and Xamarin. Strong knowledge
+    of BLE.
 - git, vim, unix
 - Drivers license (B)
 
