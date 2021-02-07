@@ -9,7 +9,7 @@ Great JavaScript skills, including React. Prefers functional
 programming.  Strong communication skills developed in several nonprofit
 commitments.
 
-Outside of work I build and plays analog synthesizers.
+Outside of work I build analog synthesizers and play music.
 
 
 
