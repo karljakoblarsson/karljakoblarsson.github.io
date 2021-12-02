@@ -16,13 +16,22 @@ Outside of work I build analog synthesizers and play music.
 Relevant Work Experience
 ---------------
 
-### Fullstack Software Engineer, LumenRadio
-Feb 2020 - Current
+### Frontend Engineer, Fyndiq.se
+July 2021 - Current
 
-Develops the app and backend for the AirGlow wireless outdoor lighting control
+I currently work as a frontend developer for Fyndiq.se, one of the largest
+e-commerce sites in Sweden.
+We are working with Next.js, TypeScript and Cypress tests.
+
+
+
+### Fullstack Software Engineer, LumenRadio
+Feb 2020 - June 2021
+
+Developed the app and backend for the AirGlow wireless outdoor lighting control
 system. The app is cross-platform and communicates with the embedded
 controller using Bluetooth LE. The system is connected via REST to a backend
-written in python. I'm sole responsible for the app and backend, and develops
+written in python. I was sole responsible for the app and backend, and developed
 the full system together with the team.
 
 
@@ -82,8 +91,8 @@ I worked with corporate relations and events.
 Skills
 ------
 
-- JavaScript, Python, C#, SQL, Haskell, Java, PHP, Erlang
-- HTML, CSS, React, Redux
+- JavaScript, TypeScript, Python, C#, SQL, Haskell, Java, PHP, Erlang
+- HTML, CSS, React, Redux, Accessibility, Lighthouse, Cypress
 - iOS and Androind app developemnt. Swift, Java and Xamarin. Strong knowledge
     of BLE.
 - git, vim, unix
