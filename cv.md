@@ -93,7 +93,7 @@ Skills
 
 - JavaScript, TypeScript, Python, C#, SQL, Haskell, Java, PHP, Erlang
 - HTML, CSS, React, Redux, Accessibility, Lighthouse, Cypress
-- iOS and Androind app developemnt. Swift, Java and Xamarin. Strong knowledge
+- iOS and Android app developemnt. Swift, Java and Xamarin. Strong knowledge
     of BLE.
 - git, vim, unix
 - Drivers license (B)
