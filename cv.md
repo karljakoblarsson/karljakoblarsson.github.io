@@ -16,17 +16,22 @@ Outside of work I build analog synthesizers and play music.
 Relevant Work Experience
 ---------------
 
-### Frontend Engineer, Fyndiq.se
-July 2021 - Current
+### Software Engineer, Devies
+Gothenburg, October 2022 - Current
 
-I currently work as a frontend developer for Fyndiq.se, one of the largest
+I currently work as a Consultant at Devies.
+
+### Frontend Engineer, Fyndiq.se
+Fully Remote, July 2021 - September 2022
+
+Worked as a fullstack developer for Fyndiq.se, one of the largest
 e-commerce sites in Sweden.
 We are working with Next.js, TypeScript and Cypress tests.
 
 
 
 ### Fullstack Software Engineer, LumenRadio
-Feb 2020 - June 2021
+Gothenburg, Feb 2020 - June 2021
 
 Developed the app and backend for the AirGlow wireless outdoor lighting control
 system. The app is cross-platform and communicates with the embedded
@@ -35,7 +40,7 @@ written in python. I was sole responsible for the app and backend, and developed
 the full system together with the team.
 
 
-### Developer, Klimator AB
+### Developer, Klimator
 Gothenburg - Summer 2018
 
 Worked on Road Status Info, an app which predicts winter road conditions.
@@ -43,7 +48,7 @@ I developed the map-based front-end using React and also worked on tuning the
 PostgreSQL database for large amounts of geospatial data.
 
 
-### Web developer, Ericsson AB
+### Web developer, Ericsson
 Lindholmen, Gothenburg - Summer 2017
 
 I developed a tool to install and manage low power radio devices in non-cellular
